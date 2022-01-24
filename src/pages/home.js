@@ -2,7 +2,7 @@ import { environment } from 'react-router-component';
 import { Button } from 'react-bootstrap';
 import './Login/LoginUi.css';
 function home() {
-    let result = fetch("https://loginform-authentication.herokuapp.com/api/v1/authenticate", {
+    let result = fetch("https://login-form-authentication.herokuapp.com/api/v1/authenticate", {
         method: 'GET',
         mode: "cors",
         headers: {
@@ -14,7 +14,7 @@ function home() {
         environment.defaultEnvironment.navigate("/login");
     }
     async function logout() {
-        let result = await fetch("https://loginform-authentication.herokuapp.com/api/v1/logout", {
+        let result = await fetch("https://login-form-authentication.herokuapp.com/api/v1/logout", {
             method: 'POST',
             mode: "cors"
         });
