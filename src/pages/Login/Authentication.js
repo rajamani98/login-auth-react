@@ -1,6 +1,6 @@
 import { environment } from 'react-router-component';
 function Authetication() {
-    let result = fetch("https://loginform-authentication.herokuapp.com/api/v1/authenticate", {
+    let result = fetch("https://login-form-authentication.herokuapp.com/api/v1/authenticate", {
         method: 'GET',
         mode: "cors",
         headers: {
