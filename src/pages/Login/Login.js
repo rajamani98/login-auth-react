@@ -13,7 +13,7 @@ function Login() {
     async function getOtp() {
         let item = { emailId }
         console.warn(item)
-        let result = await fetch("https://loginform-authentication.herokuapp.com/api/v1/login", {
+        let result = await fetch("https://login-form-authentication.herokuapp.com/api/v1/login", {
             method: 'POST',
             mode: "cors",
             body: JSON.stringify(item),
@@ -29,7 +29,7 @@ function Login() {
         console.log("verifying...");
         let item = { otp }
         console.warn(item)
-        let result = await fetch("https://loginform-authentication.herokuapp.com/api/v1/verify", {
+        let result = await fetch("https://login-form-authentication.herokuapp.com/api/v1/verify", {
             method: 'POST',
             mode: "cors",
             body: JSON.stringify(item),
