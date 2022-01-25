@@ -15,7 +15,7 @@ function Login() {
         console.warn(item)
         let result = await fetch("https://loginform-authentication.herokuapp.com/api/v1/login", {
             method: 'POST',
-            mode: "cors",
+            mode: "no-cors",
             body: JSON.stringify(item),
             headers: {
                 "Content-Type": 'application/json',
@@ -34,7 +34,7 @@ function Login() {
         console.warn(item)
         let result = await fetch("https://loginform-authentication.herokuapp.com/api/v1/verify", {
             method: 'POST',
-            mode: "cors",
+            mode: "no-cors",
             body: JSON.stringify(item),
             headers: {
                 "Content-Type": 'application/json',
