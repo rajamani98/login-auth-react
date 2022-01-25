@@ -7,6 +7,7 @@ function App() {
         <Locations>
             <Location path="/login" handler={Login} />
             <Location path="/home" handler={home} />
+            <Location path="/" handler={Login} />
         </Locations>
     )
 }
