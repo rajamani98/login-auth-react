@@ -19,7 +19,10 @@ function Login() {
             body: JSON.stringify(item),
             headers: {
                 "Content-Type": 'application/json',
-                "Accept": 'application/json'
+                "Accept": 'application/json',
+                'Access-Control-Allow-Origin': "*",
+                'Access-Control-Allow-Methods': 'GET,POST,PUT,DELETE',
+                'Access-Control-Allow-Headers': 'Content-Type'
             }
         })
         localStorage.setItem("user-info", JSON.stringify(item))
