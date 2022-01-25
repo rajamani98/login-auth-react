@@ -19,7 +19,10 @@ function home() {
     async function logout() {
         let result = await fetch("https://loginform-authentication.herokuapp.com/api/v1/logout", {
             method: 'POST',
-            mode: "cors"
+            mode: "cors",
+            'Access-Control-Allow-Origin': "*",
+            'Access-Control-Allow-Methods': 'GET,POST,PUT,DELETE',
+            'Access-Control-Allow-Headers': 'Content-Type'
         });
         if (result.status == 200)
             environment.defaultEnvironment.navigate("/login");
