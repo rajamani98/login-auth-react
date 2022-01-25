@@ -25,7 +25,7 @@ function home() {
             'Access-Control-Allow-Headers': 'Content-Type'
         });
         if (result.status == 200)
-            environment.defaultEnvironment.navigate("/login");
+            environment.defaultEnvironment.navigate("/");
         localStorage.removeItem("user-info");
     }
     return (
